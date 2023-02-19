@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Мои задачи</title>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <p>Система отслеживания задач</p>
+        </div>
+        <div class="user">
+            <p>Добро пожаловать!</p>
+        </div>
+    </div>
+    <div class="button_panel">
+        <div class="update_button">
+            <button type="submit" onclick="drawChart()">Обновить</button>
+        </div>
+    </div>
+    <div class="page_container">
+        <div class="graphic">
+            <div id="chart_div"></div>
+        </div>
+        <div class="form_container">
+            <div class="create_form">
+                <input id="task_name" type="text" placeholder="Название">
+                <input id="task_resource" type="text" placeholder="Группа">
+                <input id="date_start" type="date" placeholder="Дата начала (YYYY-MM-DD)">
+                <input id="date_end" type="date" placeholder="Дата окончания (YYYY-MM-DD)">
+                <input id="percent_complete" type="number" placeholder="Процент выполнения">
+                <button id="create-button">Создать</button>
+            </div>
+            <div class="create_form">
+                <input id="delete_task" type="text" placeholder="ID">
+                <button id="delete-button">Удалить</button>
+            </div>
+        </div>
+        <div class="calendar"> 
+            <div id='calendar'></div>
+        </div>
+        <div class="footer">
+            <p>Требуется помощь? Служба поддержки Портала: Email: support@mail.com Телефон: +7 (123) 456-78-90</p>
+    </div>
+    </div>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
