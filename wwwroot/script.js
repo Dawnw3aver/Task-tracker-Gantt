@@ -112,6 +112,5 @@ google.charts.load('current', {'packages':['gantt']});
 
   document.getElementById("delete-button").addEventListener("click", async () => {
     const id = parseInt(document.getElementById("delete_task").value);
-    document.getElementById("delete-button").reset();
     await deleteTask(id);
   });
