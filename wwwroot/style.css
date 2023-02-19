@@ -4,10 +4,6 @@
 }
 
 body{
-    /* background-image: url("src/img/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(1px); */
     background-color: #fff;
     margin: 0;
 }
@@ -82,6 +78,11 @@ button{
     border-radius: 10px;
     border: 1px solid #41AFFA;
 }
+.label{
+    font-family: Garet, sans-serif;
+    font-size: 10pt;
+    margin-left: 5px;
+}
 .create_form>input{
     padding: 10px;
     margin: 5px;
@@ -93,4 +94,12 @@ button{
     padding-left: 40px;
     padding-right: 40px;
     overflow: hidden;
+}
+.form_title{
+    font-family: Garet, sans-serif;
+    text-align: center;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 16pt;
+    margin-bottom: 10px;
 }

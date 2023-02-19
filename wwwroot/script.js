@@ -54,6 +54,13 @@ google.charts.load('current', {'packages':['gantt']});
 
     async function createTask(taskName, resource, startDate, endDate, percentComplete) {
   
+      var percent_complete= parseInt(percentComplete);
+      if(percent_complete < 0 || percent_complete > 100)
+      {
+        formReset();
+        alert("Процент выполнения не должен быть меньше нуля или больше ста.");
+        return;
+      }
       const response = await fetch("api/tasks", {
           method: "POST",
           headers: { "Accept": "application/json", "Content-Type": "application/json" },

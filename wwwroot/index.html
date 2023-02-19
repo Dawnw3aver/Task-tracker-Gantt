@@ -40,14 +40,22 @@
         </div>
         <div class="form_container">
             <div class="create_form">
-                <input id="task_name" type="text" placeholder="Название">
-                <input id="task_resource" type="text" placeholder="Группа">
-                <input id="date_start" type="date" placeholder="Дата начала (YYYY-MM-DD)">
-                <input id="date_end" type="date" placeholder="Дата окончания (YYYY-MM-DD)">
-                <input id="percent_complete" type="number" placeholder="Процент выполнения">
+                <h2 class="form_title">Создать задачу</h2>
+                <label for="task_name" class="label"> Название:</label>
+                <input id="task_name" type="text" placeholder="Название задачи">
+                <label for="task_resource" class="label"> Группа:</label>
+                <input id="task_resource" type="text" placeholder="Группа задач">
+                <label for="date_start" class="label"> Дата начала:</label>
+                <input id="date_start" type="date">
+                <label for="date_end" class="label">Дата окончания:</label>
+                <input id="date_end" type="date">
+                <label for="percent_complete" class="label">Процент выполнения:</label>
+                <input id="percent_complete" type="number">
                 <button id="create-button">Создать</button>
             </div>
             <div class="create_form">
+                <h2 class="form_title">Удалить задачу</h2>
+                <label for="delete_task" class="label">Идентификатор задачи:</label>
                 <input id="delete_task" type="text" placeholder="ID">
                 <button id="delete-button">Удалить</button>
             </div>
