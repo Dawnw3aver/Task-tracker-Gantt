@@ -13,9 +13,9 @@ namespace tasks
 
         public ApplicationContext()
         {
-            var folder = Environment.SpecialFolder.LocalApplicationData;
-            var path = Environment.GetFolderPath(folder);
-            DbPath = System.IO.Path.Join(path, "tasks.db");
+            //var folder = Environment.SpecialFolder.LocalApplicationData;
+            //var path = Environment.GetFolderPath(folder);
+            DbPath = System.IO.Path.Join("/var", "tasks.db");
 
             Database.EnsureCreated();
         }
