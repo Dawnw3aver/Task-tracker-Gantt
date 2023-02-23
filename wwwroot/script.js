@@ -17,7 +17,7 @@ google.charts.load('current', {'packages':['gantt']});
       data.addRows(rows);
 
       var options = {
-        height: 400,
+        height: 700,
         gantt: {
           trackHeight: 45,
         }

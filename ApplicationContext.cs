@@ -32,8 +32,8 @@ namespace tasks
                     Id = 1,
                     TaskName = "Работа 1",
                     Resource = "Задачи",
-                    StartDate = new DateTime(2022, 9, 8),
-                    EndDate = new DateTime(2022, 10, 8),
+                    StartDate = new DateTime(2022, 9, 10),
+                    EndDate = new DateTime(2022, 10, 10),
                     PercentComplete = 30
                 },
                 new tasks.Task
@@ -41,8 +41,8 @@ namespace tasks
                     Id = 2,
                     TaskName = "Работа 2",
                     Resource = "Задачи",
-                    StartDate = new DateTime(2023, 1, 20),
-                    EndDate = new DateTime(2023, 1, 30),
+                    StartDate = new DateTime(2022, 9, 20),
+                    EndDate = new DateTime(2022, 10, 30),
                     PercentComplete = 70
                 },
                 new tasks.Task
@@ -50,8 +50,8 @@ namespace tasks
                     Id = 3,
                     TaskName = "Работа 3",
                     Resource = "Задачи",
-                    StartDate = new DateTime(2023, 2, 1),
-                    EndDate = new DateTime(2023, 2, 5),
+                    StartDate = new DateTime(2022, 10, 25),
+                    EndDate = new DateTime(2022, 11, 15),
                     PercentComplete = 90
                 }
                 );
