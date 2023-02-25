@@ -61,6 +61,12 @@ google.charts.load('current', {'packages':['gantt']});
         alert("Процент выполнения не должен быть меньше нуля или больше ста.");
         return;
       }
+      if(startDate > endDate)
+      {
+          formReset();
+          alert("Дата начала не может быть позже даты окончания.");
+          return;
+      }
       const response = await fetch("api/tasks", {
           method: "POST",
           headers: { "Accept": "application/json", "Content-Type": "application/json" },
