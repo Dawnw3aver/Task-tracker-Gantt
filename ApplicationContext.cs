@@ -13,8 +13,10 @@ namespace tasks
 
         public ApplicationContext()
         {
-            //DbPath = System.IO.Path.Join("/app", "tasks.db");
-            DbPath = "/app/Database/";
+            DbPath = System.IO.Path.Join("/var/db", "tasks.db");
+
+            //DbPath = "/app/Database/";
+            //DbPath = "/src/tasks/Database";
 
             Database.EnsureCreated();
         }
